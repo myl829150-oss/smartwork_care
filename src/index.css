@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  --color-brand-bg: #F6F7F5;
+  --color-brand-card: #FFFFFF;
+  --color-brand-navy: #243B53;
+  --color-brand-teal: #6B9B91;
+  --color-brand-sage: #E5EEE8;
+  --color-brand-beige: #F0E9DF;
+  --color-brand-border: #E2E6E3;
+  --color-brand-text: #29343B;
+  --color-brand-secondary: #78838A;
+}
+
+body {
+  background-color: #F6F7F5;
+  color: #29343B;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}

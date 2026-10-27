@@ -1,0 +1,6 @@
+{
+  "name": "SmartWorkCare",
+  "description": "Program Intervensi Psychological Well-Being pada Karyawan Berbasis Artificial Intelligence Feedback System.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

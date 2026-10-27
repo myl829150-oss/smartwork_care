@@ -1,0 +1,439 @@
+{
+  "users": [
+    {
+      "id": "user_facilitator_1",
+      "name": "Fasilitator HR SmartWorkCare",
+      "username": "fasilitator_hr",
+      "role": "facilitator",
+      "isActive": true,
+      "createdAt": "2026-10-20T08:00:00.000Z",
+      "updatedAt": "2026-10-20T08:00:00.000Z",
+      "passwordHash": "769afe3b39d8ebb0e60d48c5eb02daacf8d771f18020864d07b8d9dde93970a441b9c3308a36cbccfe0e76d10d0f1edf84730d82dfea7b3ed5bb5aa358be06ca",
+      "passwordSalt": "c7408e4b91c394dfc2f3a8a3131d5ec5"
+    },
+    {
+      "id": "part_001",
+      "name": "Siti Nurhaliza",
+      "username": "nur_001",
+      "role": "participant",
+      "participantNumber": "001",
+      "isActive": true,
+      "createdAt": "2026-10-21T09:00:00.000Z",
+      "updatedAt": "2026-10-21T09:00:00.000Z"
+    },
+    {
+      "id": "part_002",
+      "name": "Budi Santoso",
+      "username": "budi_santoso_002",
+      "role": "participant",
+      "participantNumber": "002",
+      "isActive": true,
+      "createdAt": "2026-10-21T10:00:00.000Z",
+      "updatedAt": "2026-10-21T10:00:00.000Z"
+    },
+    {
+      "id": "part_003",
+      "name": "Dewi Lestari",
+      "username": "dewi_lestari_003",
+      "role": "participant",
+      "participantNumber": "003",
+      "isActive": true,
+      "createdAt": "2026-10-22T11:00:00.000Z",
+      "updatedAt": "2026-10-22T11:00:00.000Z"
+    },
+    {
+      "id": "part_004",
+      "name": "Andi Pratama (Akun Nonaktif Uji Coba)",
+      "username": "andi_004",
+      "role": "participant",
+      "participantNumber": "004",
+      "isActive": false,
+      "createdAt": "2026-10-22T12:00:00.000Z",
+      "updatedAt": "2026-10-22T12:00:00.000Z"
+    },
+    {
+      "id": "part_1792995308255_fz06j",
+      "name": "Dewi Anggraini",
+      "username": "dewi_anggraini_005",
+      "role": "participant",
+      "participantNumber": "005",
+      "isActive": true,
+      "createdAt": "2026-10-26T06:15:08.255Z",
+      "updatedAt": "2026-10-26T06:15:08.255Z"
+    },
+    {
+      "id": "part_1792995314802_0q5pj",
+      "name": "Dewi Anggraini",
+      "username": "dewi_anggraini_006",
+      "role": "participant",
+      "participantNumber": "006",
+      "isActive": true,
+      "createdAt": "2026-10-26T06:15:14.803Z",
+      "updatedAt": "2026-10-26T06:15:14.803Z"
+    }
+  ],
+  "participantNumberCounter": 6,
+  "progress": {
+    "part_1792995308255_fz06j": {
+      "participantId": "part_1792995308255_fz06j",
+      "programId": "smartworkcare_4weeks",
+      "overallPercentage": 0,
+      "activeWeekNumber": 1,
+      "completedWeeks": [],
+      "completedSessionsCount": 0,
+      "totalMandatorySessionsCount": 8,
+      "sessions": {}
+    },
+    "part_1792995314802_0q5pj": {
+      "participantId": "part_1792995314802_0q5pj",
+      "programId": "smartworkcare_4weeks",
+      "overallPercentage": 0,
+      "activeWeekNumber": 1,
+      "completedWeeks": [],
+      "completedSessionsCount": 0,
+      "totalMandatorySessionsCount": 8,
+      "sessions": {}
+    },
+    "part_001": {
+      "participantId": "part_001",
+      "programId": "smartworkcare_4weeks",
+      "overallPercentage": 25,
+      "activeWeekNumber": 2,
+      "completedWeeks": [
+        1
+      ],
+      "completedSessionsCount": 2,
+      "totalMandatorySessionsCount": 8,
+      "sessions": {
+        "session_1_1": {
+          "sessionId": "session_1_1",
+          "status": "Selesai",
+          "startedAt": "2026-10-26T06:15:35.699Z",
+          "activityCompletions": [
+            {
+              "activityId": "act_1_1_1",
+              "status": "Selesai",
+              "savedAnswer": {
+                "selectedOptionId": "opt_c"
+              },
+              "completedAt": "2026-10-26T06:15:35.699Z"
+            }
+          ],
+          "completedAt": "2026-10-26T06:15:35.699Z"
+        },
+        "session_1_2": {
+          "sessionId": "session_1_2",
+          "status": "Selesai",
+          "startedAt": "2026-10-26T06:15:35.709Z",
+          "activityCompletions": [
+            {
+              "activityId": "act_1_1_2",
+              "status": "Selesai",
+              "savedAnswer": {
+                "reflectionAnswers": {
+                  "ref_1": "Mencoba bernapas tenang",
+                  "ref_2": "Kemampuan mendengar",
+                  "ref_3": "Jeda 3 menit"
+                }
+              },
+              "completedAt": "2026-10-26T06:15:35.709Z"
+            }
+          ],
+          "completedAt": "2026-10-26T06:15:35.709Z"
+        }
+      },
+      "lastCompletedSessionId": "session_1_2"
+    },
+    "part_002": {
+      "participantId": "part_002",
+      "programId": "smartworkcare_4weeks",
+      "overallPercentage": 0,
+      "activeWeekNumber": 1,
+      "completedWeeks": [],
+      "completedSessionsCount": 0,
+      "totalMandatorySessionsCount": 8,
+      "sessions": {}
+    },
+    "part_003": {
+      "participantId": "part_003",
+      "programId": "smartworkcare_4weeks",
+      "overallPercentage": 0,
+      "activeWeekNumber": 1,
+      "completedWeeks": [],
+      "completedSessionsCount": 0,
+      "totalMandatorySessionsCount": 8,
+      "sessions": {}
+    },
+    "part_004": {
+      "participantId": "part_004",
+      "programId": "smartworkcare_4weeks",
+      "overallPercentage": 0,
+      "activeWeekNumber": 1,
+      "completedWeeks": [],
+      "completedSessionsCount": 0,
+      "totalMandatorySessionsCount": 8,
+      "sessions": {}
+    }
+  },
+  "reflections": {},
+  "evaluationsReaction": [
+    {
+      "id": "eval_rx_1792995516217",
+      "participantId": "part_001",
+      "submittedAt": "2026-10-26T06:18:36.217Z",
+      "ratings": {
+        "relevance": 5,
+        "clarity": 5,
+        "activityQuality": 4,
+        "aiReflectionUsefulness": 5,
+        "platformUsability": 5,
+        "durationPacing": 4,
+        "overallSatisfaction": 5
+      },
+      "openFeedback": {
+        "mostHelpfulPart": "Latihan simulasi komunikasi dan refleksi AI"
+      }
+    }
+  ],
+  "evaluationsLearning": [
+    {
+      "id": "eval_lrn_pre_test_1793085569377",
+      "participantId": "part_001",
+      "type": "pre_test",
+      "submittedAt": "2026-10-27T07:19:29.377Z",
+      "scorePercentage": 81,
+      "totalScore": 41,
+      "averageScore": 3.42,
+      "status": "Selesai",
+      "answers": [
+        {
+          "questionId": "pwb_sa_1",
+          "dimension": "self_acceptance",
+          "score": 3
+        },
+        {
+          "questionId": "pwb_sa_2",
+          "dimension": "self_acceptance",
+          "score": 3
+        },
+        {
+          "questionId": "pwb_pr_1",
+          "dimension": "positive_relations",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_pr_2",
+          "dimension": "positive_relations",
+          "score": 3
+        },
+        {
+          "questionId": "pwb_au_1",
+          "dimension": "autonomy",
+          "score": 3
+        },
+        {
+          "questionId": "pwb_au_2",
+          "dimension": "autonomy",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_em_1",
+          "dimension": "environmental_mastery",
+          "score": 3
+        },
+        {
+          "questionId": "pwb_em_2",
+          "dimension": "environmental_mastery",
+          "score": 3
+        },
+        {
+          "questionId": "pwb_pl_1",
+          "dimension": "purpose_in_life",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_pl_2",
+          "dimension": "purpose_in_life",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_pg_1",
+          "dimension": "personal_growth",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_pg_2",
+          "dimension": "personal_growth",
+          "score": 3
+        }
+      ],
+      "dimensionScores": {
+        "self_acceptance": {
+          "total": 6,
+          "average": 3,
+          "count": 2
+        },
+        "positive_relations": {
+          "total": 7,
+          "average": 3.5,
+          "count": 2
+        },
+        "autonomy": {
+          "total": 7,
+          "average": 3.5,
+          "count": 2
+        },
+        "environmental_mastery": {
+          "total": 6,
+          "average": 3,
+          "count": 2
+        },
+        "purpose_in_life": {
+          "total": 8,
+          "average": 4,
+          "count": 2
+        },
+        "personal_growth": {
+          "total": 7,
+          "average": 3.5,
+          "count": 2
+        }
+      }
+    },
+    {
+      "id": "eval_lrn_post_test_1793085574105",
+      "participantId": "part_001",
+      "type": "post_test",
+      "submittedAt": "2026-10-27T07:19:34.105Z",
+      "scorePercentage": 97,
+      "totalScore": 47,
+      "averageScore": 3.92,
+      "status": "Selesai",
+      "answers": [
+        {
+          "questionId": "pwb_sa_1",
+          "dimension": "self_acceptance",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_sa_2",
+          "dimension": "self_acceptance",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_pr_1",
+          "dimension": "positive_relations",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_pr_2",
+          "dimension": "positive_relations",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_au_1",
+          "dimension": "autonomy",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_au_2",
+          "dimension": "autonomy",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_em_1",
+          "dimension": "environmental_mastery",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_em_2",
+          "dimension": "environmental_mastery",
+          "score": 3
+        },
+        {
+          "questionId": "pwb_pl_1",
+          "dimension": "purpose_in_life",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_pl_2",
+          "dimension": "purpose_in_life",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_pg_1",
+          "dimension": "personal_growth",
+          "score": 4
+        },
+        {
+          "questionId": "pwb_pg_2",
+          "dimension": "personal_growth",
+          "score": 4
+        }
+      ],
+      "dimensionScores": {
+        "self_acceptance": {
+          "total": 8,
+          "average": 4,
+          "count": 2
+        },
+        "positive_relations": {
+          "total": 8,
+          "average": 4,
+          "count": 2
+        },
+        "autonomy": {
+          "total": 8,
+          "average": 4,
+          "count": 2
+        },
+        "environmental_mastery": {
+          "total": 7,
+          "average": 3.5,
+          "count": 2
+        },
+        "purpose_in_life": {
+          "total": 8,
+          "average": 4,
+          "count": 2
+        },
+        "personal_growth": {
+          "total": 8,
+          "average": 4,
+          "count": 2
+        }
+      }
+    }
+  ],
+  "evaluationsBehavior": [
+    {
+      "id": "eval_bhv_1792995516226",
+      "participantId": "part_001",
+      "submittedAt": "2026-10-26T06:18:36.226Z",
+      "frequencies": {
+        "recognizeLimitsWithoutSelfBlame": "Sering",
+        "constructiveAssertiveCommunication": "Sering",
+        "alignDecisionsWithPersonalValues": "Sering",
+        "prioritizeWorkTasksStructured": "Sangat Sering",
+        "leverageSupportAndResources": "Kadang-kadang",
+        "connectWorkWithMeaningfulGoals": "Sering",
+        "extractLearningFromWorkExperiences": "Sangat Sering"
+      },
+      "reflections": {
+        "workPracticeChanges": "Mulai mengurutkan 3 prioritas utama setiap pagi"
+      }
+    }
+  ],
+  "evaluationsResults": [
+    {
+      "id": "eval_res_1792995516234",
+      "participantId": "part_001",
+      "submittedAt": "2026-10-26T06:18:36.234Z",
+      "perceivedDemandsManagement": 5,
+      "perceivedWorkRelationships": 4,
+      "perceivedPurposeClarity": 5,
+      "perceivedOverallBenefit": 5,
+      "notes": "Program sangat membantu kesehatan mental kerja."
+    }
+  ]
+}

@@ -1,0 +1,824 @@
+# PROYEK PEMBANGUNAN APLIKASI WEB SMARTWORKCARE DARI NOL
+
+## 1. PERAN DAN TANGGUNG JAWAB
+
+Bertindaklah sebagai Senior Full-Stack Developer, Software Architect, UI/UX Designer, Database Designer, dan pengembang aplikasi digital untuk program intervensi psikologi.
+
+Tugasmu adalah membangun sebuah aplikasi web baru dari nol bernama:
+
+**SmartWorkCare: Program Intervensi Psychological Well-Being pada Karyawan Berbasis Artificial Intelligence Feedback System.**
+
+Aplikasi ini akan digunakan untuk mendukung pelaksanaan program intervensi Psychological Well-Being (PWB) pada karyawan selama empat minggu.
+
+Aplikasi harus dirancang sebagai sistem yang benar-benar dapat dikembangkan, diuji, dan digunakan, bukan hanya desain dashboard, landing page, atau prototype yang seluruh tombolnya tidak berfungsi.
+
+Bangun fondasi aplikasi dengan struktur kode yang rapi, komponen yang dapat digunakan kembali, pengelolaan data yang jelas, autentikasi yang benar, dan navigasi yang konsisten.
+
+Jangan hanya memberikan contoh kode atau penjelasan arsitektur. Implementasikan aplikasi secara langsung di lingkungan proyek Google AI Studio yang sedang digunakan.
+
+Jika terdapat batasan lingkungan pengembangan atau layanan eksternal yang belum tersedia, jelaskan batasannya dengan jujur dan siapkan struktur integrasi yang sesuai.
+
+Jangan mengklaim fitur sudah berfungsi jika baru berupa tampilan atau simulasi.
+
+---
+
+## 2. TUJUAN APLIKASI
+
+SmartWorkCare merupakan platform digital untuk membantu peserta mengikuti program intervensi Psychological Well-Being secara bertahap.
+
+Aplikasi dirancang untuk mendukung lima proses utama:
+
+1. Asesmen Psychological Well-Being sesuai instrumen yang ditetapkan.
+2. Psikoedukasi digital yang nantinya dikembangkan menjadi games interaktif.
+3. AI Reflection dan AI Feedback yang membantu peserta melakukan refleksi secara natural.
+4. Rencana tindakan dan pemantauan perkembangan selama program.
+5. Evaluasi program menggunakan Model Evaluasi Kirkpatrick.
+
+Program berlangsung selama empat minggu.
+
+Peserta harus menyelesaikan tahapan program secara berurutan. Sesi berikutnya tidak boleh dibuka sebelum persyaratan sesi sebelumnya terpenuhi.
+
+Fasilitator bertugas mengelola akun peserta, memantau progres program sesuai kewenangan, dan mengakses hasil evaluasi yang diperlukan.
+
+Aplikasi nantinya juga akan memiliki fitur pembuatan laporan akhir dalam bentuk PDF.
+
+Namun, pada tahap pertama ini, prioritaskan fondasi aplikasi, autentikasi, struktur data, navigasi, dan alur dasar program.
+
+Jangan membangun semua fitur lanjutan sekaligus dengan mengorbankan kualitas fondasi.
+
+---
+
+## 3. KERANGKA PSYCHOLOGICAL WELL-BEING
+
+Gunakan enam dimensi Psychological Well-Being berikut sebagai kerangka konseptual program:
+
+1. Self-Acceptance.
+2. Positive Relations with Others.
+3. Autonomy.
+4. Environmental Mastery.
+5. Purpose in Life.
+6. Personal Growth.
+
+Seluruh struktur program nantinya harus dapat dihubungkan dengan dimensi yang relevan.
+
+Jangan mengarang instrumen asesmen, item pertanyaan psikologis, aturan skoring, atau interpretasi klinis pada tahap pembangunan fondasi.
+
+Apabila instrumen resmi belum diberikan, siapkan struktur sistem agar instrumen dapat ditambahkan kemudian.
+
+Berikan penanda yang jelas bahwa konfigurasi instrumen masih menunggu materi resmi.
+
+Jangan membuat skor PWB fiktif untuk mengisi dashboard.
+
+---
+
+## 4. TEKNOLOGI DAN ARSITEKTUR APLIKASI
+
+Periksa kemampuan lingkungan Google AI Studio yang tersedia, lalu gunakan teknologi yang kompatibel dan sesuai untuk membangun aplikasi web ini.
+
+Jika lingkungan mendukung React dan TypeScript, gunakan keduanya untuk frontend.
+
+Gunakan pendekatan modular dengan pemisahan yang jelas antara:
+
+- Halaman.
+- Komponen UI.
+- Navigasi.
+- Logika bisnis.
+- Pengelolaan autentikasi.
+- Pengelolaan data.
+- Validasi.
+- Layanan integrasi.
+- Konfigurasi program.
+- Penanganan kesalahan.
+
+Jangan menumpuk seluruh aplikasi dalam satu komponen besar.
+
+Gunakan struktur proyek yang konsisten dan mudah dipelihara.
+
+Pilih backend dan penyimpanan data yang benar-benar sesuai dengan lingkungan proyek.
+
+Jika menggunakan layanan backend eksternal, pastikan integrasinya memang dapat dijalankan dan membutuhkan konfigurasi yang dapat dijelaskan.
+
+Jangan menganggap Google AI Studio secara otomatis menyediakan database produksi, autentikasi siap pakai, atau integrasi Google Sheets yang sudah aktif.
+
+Jika menggunakan Google Sheets sebagai penyimpanan, siapkan integrasi melalui mekanisme backend yang aman dan terdokumentasi. Jangan menghubungkan aplikasi ke spreadsheet privat dengan menaruh kredensial rahasia di frontend.
+
+Jika layanan backend belum dikonfigurasi, pisahkan antarmuka aplikasi dari lapisan data dan buat konfigurasi yang jelas. Tandai fitur yang masih memerlukan koneksi backend.
+
+Jangan menggunakan localStorage sebagai satu-satunya penyimpanan untuk data peserta yang sensitif, autentikasi, atau status sesi yang harus dilindungi.
+
+LocalStorage boleh digunakan untuk preferensi UI yang tidak sensitif atau kebutuhan sementara yang memang sesuai.
+
+---
+
+## 5. IDENTITAS VISUAL SMARTWORKCARE
+
+Bangun identitas visual awal yang sederhana, profesional, natural, dan berorientasi pada manusia.
+
+Konsep desain:
+
+Human-Centered Employee Psychological Well-Being Platform.
+
+Aplikasi harus terasa seperti platform kesejahteraan karyawan yang dirancang secara profesional.
+
+Hindari tampilan yang terlalu futuristik, penuh efek AI, atau menyerupai dashboard analitik yang rumit.
+
+### Palet warna
+
+Gunakan warna berikut:
+
+- Background utama: #F6F7F5.
+- Putih: #FFFFFF.
+- Navy: #243B53.
+- Muted teal: #6B9B91.
+- Soft sage: #E5EEE8.
+- Warm beige: #F0E9DF.
+- Border: #E2E6E3.
+- Teks utama: #29343B.
+- Teks sekunder: #78838A.
+
+Gunakan warna secara konsisten.
+
+Navy digunakan untuk elemen utama dan teks penting.
+
+Muted teal dan soft sage digunakan sebagai aksen.
+
+Background utama harus tetap terang dan nyaman dilihat.
+
+### Tipografi
+
+Gunakan Plus Jakarta Sans dan Inter jika tersedia.
+
+Jika tidak tersedia, gunakan alternatif sans-serif yang mudah dibaca.
+
+Gunakan hierarki tipografi yang konsisten untuk:
+- Judul halaman.
+- Judul bagian.
+- Isi teks.
+- Label formulir.
+- Informasi tambahan.
+- Status aktivitas.
+
+### Komponen UI
+
+Gunakan:
+- Kartu sederhana.
+- Sudut membulat sekitar 8–14 px.
+- Shadow yang sangat ringan.
+- Spasi yang konsisten.
+- Tombol yang jelas.
+- Formulir yang rapi.
+- Ikon sederhana.
+- Transisi yang tidak berlebihan.
+- Kontras teks yang baik.
+
+Jangan membuat tampilan terlalu ramai.
+
+Jangan menggunakan grafik atau angka statistik palsu.
+
+Jangan membuat avatar robot sebagai identitas utama aplikasi.
+
+### Logo dan gambar
+
+Saya akan mengunggah logo SmartWorkCare atau logo institusi yang akan digunakan serta beberapa foto gedung kampus.
+
+Buat struktur aplikasi yang memungkinkan aset tersebut diintegrasikan kemudian.
+
+Untuk saat ini, gunakan placeholder logo yang sederhana dan diberi penanda bahwa aset belum tersedia.
+
+Jangan membuat logo resmi palsu atau menyatakan placeholder sebagai logo sebenarnya.
+
+Jangan menggunakan foto kampus yang belum saya unggah.
+
+Struktur halaman harus memungkinkan logo dan foto kampus ditambahkan pada tahap desain berikutnya tanpa membangun ulang aplikasi.
+
+---
+
+## 6. JENIS PENGGUNA DAN HAK AKSES
+
+Bangun fondasi sistem dengan dua role utama.
+
+### A. PARTICIPANT
+
+Peserta merupakan karyawan yang mengikuti program SmartWorkCare.
+
+Peserta nantinya dapat:
+- Login ke aplikasi.
+- Melihat dashboard pribadi.
+- Mengikuti program empat minggu.
+- Mengakses sesi yang sudah terbuka.
+- Mengerjakan asesmen sesuai jadwal.
+- Mengikuti games psikoedukasi.
+- Menggunakan AI Reflection.
+- Menyusun rencana tindakan.
+- Melihat progres pribadi.
+- Mengikuti evaluasi program.
+- Mengunduh laporan pribadi apabila fitur laporan telah tersedia dan diizinkan.
+
+Pada tahap pertama, prioritaskan autentikasi dan dashboard dasar.
+
+Jangan menampilkan fitur lanjutan seolah-olah sudah berjalan apabila implementasinya belum tersedia.
+
+### B. FACILITATOR
+
+Fasilitator merupakan pengguna yang memiliki kewenangan untuk mengelola pelaksanaan program.
+
+Fasilitator nantinya dapat:
+- Login ke dashboard fasilitator.
+- Membuat akun peserta.
+- Mengelola status akun peserta.
+- Melihat daftar peserta yang menjadi tanggung jawabnya.
+- Memantau progres program.
+- Memeriksa status penyelesaian sesi.
+- Mengakses hasil evaluasi sesuai kewenangan.
+- Membuat laporan program apabila fitur laporan telah tersedia.
+
+Fasilitator tidak boleh otomatis memperoleh akses tanpa batas terhadap semua informasi pribadi peserta.
+
+Akses terhadap data asesmen dan refleksi harus dibatasi berdasarkan kebutuhan dan kebijakan program.
+
+### Aturan hak akses
+
+Terapkan role-based access control.
+
+Jangan hanya menyembunyikan menu berdasarkan role di frontend.
+
+Backend harus memeriksa hak akses ketika pengguna meminta data atau melakukan tindakan.
+
+Peserta tidak boleh:
+- Membuka dashboard fasilitator.
+- Membuat akun fasilitator.
+- Mengubah role miliknya sendiri.
+- Membaca data peserta lain.
+- Mengubah hasil asesmen.
+- Membuka sesi terkunci melalui request langsung.
+
+Fasilitator tidak boleh mengubah hasil psikologis peserta secara sembarangan.
+
+Jangan menyediakan pendaftaran publik untuk akun fasilitator.
+
+Pembuatan akun fasilitator harus menggunakan mekanisme administrasi yang terkendali.
+
+---
+
+## 7. HALAMAN LOGIN
+
+Buat halaman login yang profesional, sederhana, dan mudah digunakan.
+
+Halaman login harus menjadi pintu masuk utama aplikasi.
+
+### Komponen halaman login
+
+Tampilkan:
+- Logo atau placeholder logo.
+- Nama SmartWorkCare.
+- Deskripsi singkat program.
+- Kolom identitas login.
+- Kolom kata sandi.
+- Tombol untuk menampilkan atau menyembunyikan kata sandi.
+- Tombol masuk.
+- Pesan kesalahan yang mudah dipahami.
+- Informasi bantuan login jika tersedia.
+
+Gunakan teks pembuka:
+
+"Selamat datang di SmartWorkCare"
+
+Deskripsi:
+
+"Ruang untuk mengenali diri, membangun kebiasaan yang lebih sehat, dan mengembangkan kesejahteraan psikologis dalam kehidupan kerja."
+
+Gunakan bahasa yang hangat dan profesional.
+
+Jangan menampilkan kata sandi atau kredensial contoh yang dapat digunakan untuk mengakses sistem.
+
+Jangan membuat tombol login yang hanya mengarahkan pengguna ke dashboard tanpa autentikasi.
+
+Jika backend autentikasi belum dikonfigurasi, jangan menyimulasikan login berhasil sebagai autentikasi nyata. Tampilkan status konfigurasi dengan jelas selama pengembangan.
+
+---
+
+## 8. SISTEM AUTENTIKASI
+
+Bangun fondasi autentikasi yang aman.
+
+Gunakan layanan autentikasi yang sesuai dengan arsitektur aplikasi.
+
+Jika menggunakan penyedia autentikasi eksternal, ikuti praktik resmi layanan tersebut.
+
+Jika autentikasi dikelola sendiri, gunakan mekanisme penyimpanan kata sandi yang aman, hashing yang sesuai, manajemen sesi yang aman, serta validasi di backend.
+
+Jangan menyimpan kata sandi dalam teks biasa.
+
+Jangan menaruh API key, service account, token rahasia, atau kredensial backend di kode frontend.
+
+Implementasikan:
+- Login.
+- Logout.
+- Pemeriksaan sesi pengguna.
+- Pemisahan role.
+- Penanganan login gagal.
+- Pembatasan akses ke halaman privat.
+- Pengelolaan sesi login.
+- Pengarahan pengguna sesuai role.
+- Pesan jika sesi berakhir.
+- Penanganan akses yang tidak diizinkan.
+
+Jika fitur lupa kata sandi memerlukan layanan eksternal yang belum tersedia, tampilkan status bahwa konfigurasi pemulihan akun masih diperlukan.
+
+Jangan mengklaim autentikasi siap produksi sebelum backend benar-benar terhubung dan diuji.
+
+---
+
+## 9. STRUKTUR NAVIGASI APLIKASI
+
+Buat dua area aplikasi yang berbeda.
+
+### A. AREA PESERTA
+
+Gunakan navigasi berikut:
+
+1. Beranda.
+2. Program Saya.
+3. Asesmen.
+4. Ruang Refleksi.
+5. Perkembangan.
+6. Profil.
+
+Pada tahap pertama, bangun struktur halaman, navigasi, dan keadaan dasar setiap halaman.
+
+Untuk fitur yang belum dibangun, tampilkan halaman placeholder yang menjelaskan bahwa fitur sedang disiapkan.
+
+Jangan membuat placeholder terlihat seperti hasil atau data nyata.
+
+### B. AREA FASILITATOR
+
+Gunakan navigasi berikut:
+
+1. Dashboard.
+2. Data Peserta.
+3. Progres Program.
+4. Evaluasi.
+5. Laporan.
+6. Pengaturan.
+
+Navigasi fasilitator harus terpisah dari navigasi peserta.
+
+Jangan menampilkan menu fasilitator kepada peserta.
+
+Halaman yang belum memiliki implementasi harus ditandai sebagai belum tersedia, bukan dibuat seolah-olah sudah memiliki fungsi lengkap.
+
+---
+
+## 10. DASHBOARD PESERTA
+
+Buat halaman beranda peserta dengan judul:
+
+**Perjalanan Kesejahteraanmu**
+
+Dashboard harus sederhana dan mudah dipahami.
+
+Komponen utama:
+
+### A. Sapaan
+
+Tampilkan sapaan yang natural berdasarkan nama peserta jika tersedia.
+
+Contoh:
+
+"Halo, selamat datang kembali."
+
+Jangan membuat klaim mengenai kondisi psikologis peserta berdasarkan data yang belum tersedia.
+
+### B. Ringkasan program
+
+Tampilkan:
+- Nama program.
+- Durasi program empat minggu.
+- Ringkasan tujuan program.
+- Status program peserta.
+
+### C. Progres program
+
+Sediakan komponen visual untuk menampilkan progres empat minggu.
+
+Jika data progres belum tersedia, tampilkan status:
+
+"Program belum dimulai."
+
+Jangan menampilkan progres 25%, 50%, atau 100% sebagai data nyata tanpa aktivitas yang tersimpan.
+
+### D. Sesi aktif
+
+Tampilkan sesi yang dapat dikerjakan peserta berdasarkan status aktual.
+
+Jika belum ada sesi yang terbuka, tampilkan informasi yang sesuai.
+
+### E. Aktivitas berikutnya
+
+Sediakan area untuk aktivitas yang perlu dilanjutkan setelah sistem program diimplementasikan.
+
+Untuk tahap pertama, tampilkan placeholder yang jelas jika aktivitas belum dikonfigurasi.
+
+Jangan menampilkan tombol yang tidak memiliki fungsi.
+
+---
+
+## 11. DASHBOARD FASILITATOR
+
+Buat halaman dashboard fasilitator dengan tampilan yang berbeda dari dashboard peserta.
+
+Komponen utama:
+
+### A. Ringkasan peserta
+
+Sediakan area untuk menampilkan:
+- Jumlah peserta terdaftar.
+- Peserta yang belum memulai.
+- Peserta yang sedang mengikuti program.
+- Peserta yang telah menyelesaikan program.
+
+Angka hanya boleh ditampilkan jika bersumber dari database.
+
+Jika belum ada peserta, tampilkan keadaan kosong seperti:
+
+"Belum ada peserta yang terdaftar."
+
+### B. Pemantauan program
+
+Sediakan area untuk:
+- Ringkasan progres program.
+- Status penyelesaian sesi.
+- Daftar peserta.
+- Filter status program.
+- Pencarian peserta.
+
+Jangan mengarang nama peserta atau data progres.
+
+### C. Akses cepat
+
+Sediakan navigasi menuju:
+- Pengelolaan peserta.
+- Progres program.
+- Evaluasi.
+- Laporan.
+- Pengaturan.
+
+Fitur yang belum dibangun harus diberi status yang jelas.
+
+---
+
+## 12. STRUKTUR PROGRAM EMPAT MINGGU
+
+Buat fondasi data untuk program empat minggu.
+
+Gunakan struktur dasar:
+
+- Minggu 1 — Sesi 1.
+- Minggu 2 — Sesi 2.
+- Minggu 3 — Sesi 3.
+- Minggu 4 — Sesi 4.
+
+Struktur ini harus dapat dikembangkan sesuai rancangan intervensi resmi.
+
+Setiap sesi perlu memiliki struktur data yang mendukung:
+- ID sesi.
+- Nomor minggu.
+- Nama sesi.
+- Deskripsi.
+- Tujuan sesi.
+- Dimensi PWB yang relevan.
+- Daftar aktivitas.
+- Status publikasi.
+- Urutan sesi.
+- Persyaratan penyelesaian.
+
+Setiap aktivitas perlu mendukung:
+- ID aktivitas.
+- ID sesi.
+- Nama aktivitas.
+- Jenis aktivitas.
+- Deskripsi.
+- Status wajib atau opsional.
+- Urutan aktivitas.
+- Status penyelesaian peserta.
+
+Jangan mengarang nama sesi, isi psikoedukasi, item asesmen, atau materi resmi yang belum ditentukan.
+
+Gunakan nama sementara "Sesi 1", "Sesi 2", "Sesi 3", dan "Sesi 4" apabila isi resmi belum tersedia.
+
+Tandai sesi yang belum memiliki konten sebagai belum dikonfigurasi.
+
+---
+
+## 13. FONDASI SISTEM SESI BERTAHAP
+
+Rancang fondasi agar sesi dapat dibuka secara berurutan.
+
+Aturan dasarnya:
+
+- Sesi 1 dapat diakses jika peserta memenuhi prasyarat program.
+- Sesi 2 terkunci sampai Sesi 1 selesai.
+- Sesi 3 terkunci sampai Sesi 2 selesai.
+- Sesi 4 terkunci sampai Sesi 3 selesai.
+
+Status penyelesaian harus didasarkan pada aktivitas wajib yang telah diselesaikan dan berhasil disimpan.
+
+Jangan menganggap sesi selesai hanya karena peserta membuka halaman.
+
+Jangan menjadikan perubahan tampilan frontend sebagai bukti penyelesaian.
+
+Pada tahap fondasi ini, siapkan struktur data dan layanan bisnis yang dibutuhkan agar aturan tersebut dapat diterapkan secara konsisten.
+
+Jangan menganggap seluruh sistem penguncian sudah selesai apabila validasi backend belum diimplementasikan dan diuji.
+
+Sesi yang terkunci nantinya harus menampilkan informasi yang ramah kepada peserta.
+
+---
+
+## 14. FONDASI DATABASE DAN MODEL DATA
+
+Rancang model data yang dapat dikembangkan.
+
+Sesuaikan dengan backend yang dipilih.
+
+Secara konseptual, aplikasi memerlukan entitas berikut:
+
+### Users
+Untuk menyimpan identitas akun, role, dan status akun.
+
+### Participants
+Untuk menyimpan informasi peserta yang diperlukan bagi pelaksanaan program.
+
+### Programs
+Untuk menyimpan konfigurasi program.
+
+### Sessions
+Untuk menyimpan empat sesi dan urutannya.
+
+### Activities
+Untuk menyimpan aktivitas yang berada di dalam sesi.
+
+### ParticipantProgress
+Untuk menghubungkan peserta dengan program dan progresnya.
+
+### ActivityCompletions
+Untuk menyimpan status penyelesaian aktivitas peserta.
+
+### Assessments
+Untuk menampung metadata asesmen ketika instrumen resmi telah dikonfigurasi.
+
+### Reflections
+Untuk menampung refleksi jika fitur tersebut telah dibangun, dengan pembatasan akses yang sesuai.
+
+### Evaluations
+Untuk menampung evaluasi program setelah struktur evaluasinya dikonfigurasi.
+
+Entitas tersebut merupakan rancangan konseptual. Jangan membuat tabel yang tidak sesuai dengan kemampuan database atau arsitektur yang benar-benar digunakan.
+
+Gunakan ID unik dan relasi yang jelas.
+
+Hindari duplikasi data.
+
+Pisahkan data akun dan data program jika arsitektur memerlukannya.
+
+Terapkan validasi untuk memastikan data seorang peserta tidak terhubung ke akun peserta lain secara tidak sengaja.
+
+Jangan menyimpan data sensitif yang tidak diperlukan.
+
+---
+
+## 15. PRIVASI DAN PERLINDUNGAN DATA
+
+Karena SmartWorkCare berkaitan dengan Psychological Well-Being, perlindungan data harus menjadi bagian dari arsitektur sejak awal.
+
+Terapkan prinsip:
+- Pengumpulan data minimum.
+- Pembatasan akses berdasarkan role.
+- Pemisahan data peserta.
+- Penyimpanan yang aman.
+- Validasi akses di backend.
+- Transparansi mengenai data yang dikumpulkan.
+- Penanganan kesalahan yang tidak membocorkan informasi sensitif.
+
+Jangan menampilkan data asesmen, jawaban refleksi, atau informasi sensitif kepada pengguna yang tidak berwenang.
+
+Jangan memasukkan data pribadi atau refleksi peserta ke layanan AI eksternal tanpa mekanisme pemrosesan yang sesuai.
+
+Siapkan struktur yang memungkinkan aplikasi menjelaskan kepada peserta bagaimana data mereka digunakan.
+
+Jangan mengklaim aplikasi telah memenuhi seluruh kewajiban keamanan atau regulasi sebelum implementasi dan pemeriksaan yang diperlukan dilakukan.
+
+---
+
+## 16. PENANGANAN KEADAAN KOSONG DAN KESALAHAN
+
+Buat komponen untuk menangani:
+- Data belum tersedia.
+- Daftar peserta masih kosong.
+- Program belum dimulai.
+- Sesi belum dikonfigurasi.
+- Koneksi backend gagal.
+- Login gagal.
+- Akses ditolak.
+- Data gagal dimuat.
+- Data gagal disimpan.
+
+Gunakan pesan yang sederhana dan ramah.
+
+Contoh:
+
+"Belum ada aktivitas yang tersedia."
+
+"Program belum dimulai. Informasi sesi akan muncul setelah program dikonfigurasi."
+
+"Kami belum berhasil memuat data. Silakan coba kembali."
+
+Jangan menampilkan stack trace atau pesan teknis internal kepada pengguna.
+
+Catat kesalahan teknis melalui mekanisme logging yang aman apabila tersedia.
+
+Jangan menampilkan keberhasilan palsu ketika request backend gagal.
+
+---
+
+## 17. RESPONSIVITAS DAN AKSESIBILITAS
+
+Pastikan fondasi aplikasi berjalan baik pada:
+- Desktop.
+- Laptop.
+- Tablet.
+- Ponsel.
+
+Perhatikan:
+- Layout yang menyesuaikan ukuran layar.
+- Navigasi yang nyaman.
+- Formulir yang mudah digunakan.
+- Ukuran teks yang jelas.
+- Kontras warna yang baik.
+- Tombol yang mudah ditekan.
+- Label yang jelas untuk input.
+- Navigasi keyboard yang memadai.
+- Indikator fokus.
+- Pesan kesalahan yang mudah dipahami.
+
+Jangan hanya membuat desain desktop dan membiarkan tampilan ponsel tidak teratur.
+
+---
+
+## 18. PEMBAGIAN IMPLEMENTASI TAHAP PERTAMA
+
+Pada tahap pertama ini, implementasikan:
+
+1. Struktur proyek aplikasi.
+2. Identitas visual dasar SmartWorkCare.
+3. Halaman login.
+4. Fondasi autentikasi.
+5. Pemisahan role peserta dan fasilitator.
+6. Navigasi kedua jenis pengguna.
+7. Dashboard dasar peserta.
+8. Dashboard dasar fasilitator.
+9. Struktur program empat minggu.
+10. Fondasi model data.
+11. Fondasi penyimpanan progres.
+12. Fondasi sistem sesi bertahap.
+13. Penanganan keadaan kosong dan kesalahan.
+14. Responsivitas dasar.
+15. Dokumentasi konfigurasi yang diperlukan.
+
+Jangan dahulu mengimplementasikan seluruh detail games, AI Reflection, evaluasi Kirkpatrick, dan laporan PDF.
+
+Siapkan struktur agar fitur-fitur tersebut dapat ditambahkan pada tahap berikutnya tanpa merombak arsitektur utama.
+
+---
+
+## 19. PENGUJIAN DASAR
+
+Setelah implementasi, uji fondasi aplikasi.
+
+Gunakan akun dan data fiktif.
+
+Lakukan pemeriksaan:
+
+### Tes 1 — Struktur aplikasi
+Pastikan halaman utama dan navigasi dapat dibuka.
+
+### Tes 2 — Halaman login
+Pastikan form login berfungsi dan menampilkan validasi yang sesuai.
+
+### Tes 3 — Autentikasi
+Jika backend autentikasi sudah dikonfigurasi, uji login berhasil, login gagal, dan logout.
+
+Jika backend belum tersedia, tandai autentikasi sebagai belum terhubung. Jangan menyimulasikan hasil sebagai autentikasi nyata.
+
+### Tes 4 — Pemisahan role
+Pastikan peserta dan fasilitator memiliki area aplikasi yang berbeda.
+
+### Tes 5 — Dashboard
+Pastikan dashboard menampilkan data yang benar atau keadaan kosong yang sesuai.
+
+### Tes 6 — Struktur program
+Pastikan empat sesi dapat direpresentasikan secara berurutan.
+
+### Tes 7 — Penyimpanan
+Pastikan data yang disimpan dapat dibaca kembali jika backend sudah tersedia.
+
+### Tes 8 — Responsivitas
+Periksa layout pada ukuran desktop dan ponsel.
+
+### Tes 9 — Hak akses
+Uji bahwa halaman privat tidak dapat diakses tanpa autentikasi yang sah jika backend sudah terhubung.
+
+### Tes 10 — Data fiktif
+Pastikan tidak ada skor psikologis, hasil evaluasi, atau progres fiktif yang ditampilkan sebagai data nyata.
+
+Jika suatu tes tidak dapat dijalankan, tandai sebagai BELUM DIUJI.
+
+---
+
+## 20. KRITERIA KEBERHASILAN
+
+Tahap pertama dinyatakan berhasil apabila:
+
+- Aplikasi memiliki struktur proyek yang rapi.
+- Halaman login tersedia.
+- Struktur role peserta dan fasilitator tersedia.
+- Navigasi kedua role terpisah.
+- Dashboard peserta tersedia.
+- Dashboard fasilitator tersedia.
+- Struktur program empat minggu tersedia.
+- Model data dasar terdokumentasi.
+- Fondasi sistem sesi bertahap tersedia.
+- Tampilan responsif.
+- Keadaan kosong ditangani dengan benar.
+- Tidak ada data contoh yang diklaim sebagai data nyata.
+- Konfigurasi eksternal didokumentasikan.
+- Hasil pengujian dilaporkan secara jujur.
+
+Jangan menyatakan aplikasi siap digunakan oleh peserta nyata jika autentikasi, penyimpanan data, atau otorisasi belum benar-benar dikonfigurasi dan diuji.
+
+---
+
+## 21. FORMAT LAPORAN HASIL
+
+Setelah implementasi, berikan laporan dengan struktur:
+
+### A. Ringkasan pembangunan
+Jelaskan fondasi aplikasi yang telah dibuat.
+
+### B. Struktur teknis
+Jelaskan framework, backend, penyimpanan data, dan arsitektur yang benar-benar digunakan.
+
+### C. Halaman yang tersedia
+Daftarkan halaman peserta dan fasilitator yang berhasil dibuat.
+
+### D. Fitur yang sudah berfungsi
+Pisahkan fitur yang telah diuji dari fitur yang baru berupa struktur dasar.
+
+### E. Konfigurasi eksternal
+Sebutkan layanan, kredensial, variabel lingkungan, atau pengaturan yang masih dibutuhkan. Jangan menampilkan nilai rahasia.
+
+### F. Hasil pengujian
+
+Gunakan tabel:
+
+| Area | Status | Keterangan |
+|---|---|---|
+| Struktur aplikasi | LULUS/GAGAL/BELUM DIUJI | Hasil aktual |
+| Halaman login | LULUS/GAGAL/BELUM DIUJI | Hasil aktual |
+| Autentikasi | LULUS/GAGAL/BELUM DIUJI | Hasil aktual |
+| Pemisahan role | LULUS/GAGAL/BELUM DIUJI | Hasil aktual |
+| Dashboard peserta | LULUS/GAGAL/BELUM DIUJI | Hasil aktual |
+| Dashboard fasilitator | LULUS/GAGAL/BELUM DIUJI | Hasil aktual |
+| Struktur empat minggu | LULUS/GAGAL/BELUM DIUJI | Hasil aktual |
+| Penyimpanan data | LULUS/GAGAL/BELUM DIUJI | Hasil aktual |
+| Responsivitas | LULUS/GAGAL/BELUM DIUJI | Hasil aktual |
+
+Jangan menandai fitur sebagai LULUS apabila hanya berupa desain atau belum diuji.
+
+### G. Pekerjaan yang belum selesai
+Jelaskan apa yang harus dilanjutkan pada tahap berikutnya.
+
+### H. Konfirmasi
+Setelah memberikan laporan, berhenti dan tunggu instruksi saya.
+
+Jangan melanjutkan ke tahap pembangunan fitur berikutnya tanpa persetujuan saya.
+
+---
+
+## 22. INSTRUKSI AKHIR
+
+Mulai bangun SmartWorkCare dari nol di proyek Google AI Studio yang sedang aktif.
+
+Bangun fondasi secara langsung, bukan hanya memberikan penjelasan atau mockup.
+
+Prioritaskan arsitektur yang dapat dikembangkan, autentikasi yang benar, pemisahan role, struktur data yang jelas, navigasi yang konsisten, dan pengalaman pengguna yang sederhana.
+
+Jangan membuat seluruh fitur lanjutan sekaligus.
+
+Jangan membuat data psikologis atau hasil evaluasi palsu.
+
+Jangan mengklaim integrasi yang belum berjalan.
+
+Setelah fondasi selesai, tampilkan laporan hasil implementasi dan tunggu persetujuan saya.
+
+**JANGAN LANJUT KE TAHAP KEDUA SEBELUM SAYA MEMBERIKAN PERSETUJUAN.**
